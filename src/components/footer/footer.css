@@ -1,0 +1,37 @@
+.footer {
+  height: 70vh;
+  width: 100vw;
+  background-color: var(--accent);
+  display: grid;
+  place-items: center;
+}
+
+.footer-top {
+  width: calc(100% - 140px);
+}
+
+.sm-title {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.footer-bottom {
+  height: 10vh;
+  width: calc(100% - 140px);
+  border-top: 1.5px solid black;
+  align-self: flex-end;
+  padding-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5vh;
+}
+
+.footer-social {
+  display: flex;
+  gap: 10px;
+}
+
+.footer-social-link {
+  cursor: pointer;
+}

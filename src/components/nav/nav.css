@@ -1,0 +1,198 @@
+@keyframes color-change {
+  0% {
+    color: white;
+    scale: 1;
+  }
+  50% {
+    color: var(--accent);
+    scale: 1.1;
+  }
+  100% {
+    color: white;
+    scale: 1;
+  }
+}
+
+.nav {
+  display: flex;
+  height: 5rem;
+  width: 100vw;
+  background: transparent;
+  justify-content: space-between;
+  padding-left: 70px;
+  padding-right: 70px;
+  font-family: "Jost", sans-serif;
+  position: absolute;
+  z-index: 2;
+  padding-top: 25px;
+}
+
+/* .nav-af {
+  background-color: black;
+  padding-top: 10px;
+} */
+
+.logo {
+  color: white;
+  margin-top: 20px;
+  font-weight: 500;
+  font-size: 2.1vmax;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.logo1 {
+  color: var(--accent);
+  margin-top: 20px;
+  font-weight: 500;
+  font-size: 2.1vmax;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.open {
+  color: white !important;
+}
+
+.open,
+.close {
+  color: var(--accent);
+  font-size: 2.8vmax;
+  cursor: pointer;
+}
+
+.close {
+  border: 2px solid white;
+  border-radius: 50%;
+  align-self: center;
+}
+
+@keyframes slidein {
+  from {
+    transform: translateY(-100%);
+  }
+
+  to {
+    transform: translateY(0%);
+  }
+}
+
+@keyframes slideout {
+  from {
+    transform: translateY(-100%);
+  }
+
+  to {
+    transform: translateY(0%);
+  }
+}
+
+.right {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.getin {
+  color: white;
+  height: 45px;
+  padding-left: 30px;
+  padding-right: 30px;
+
+  font-size: 0.9rem;
+  border: 1px solid var(--accent);
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.5s linear;
+  font-weight: 400;
+}
+
+.getin:hover {
+  background-color: var(--accent);
+  color: black;
+}
+
+.menuNav {
+  overflow-y: scroll;
+  list-style: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: black !important;
+  bottom: 0;
+  height: 100vh;
+  width: 100%;
+  z-index: 10;
+  display: flex;
+  overflow-x: hidden;
+}
+
+.menuNav.showMenu {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  background-color: black !important;
+}
+
+.links {
+  display: grid;
+  height: 50vh;
+  padding-left: 70px;
+  position: absolute;
+  top: 60%;
+  transform: translate(0, -60%);
+}
+
+.link {
+  color: white;
+  text-decoration: none;
+  font-size: 5vw;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.media {
+  display: flex;
+  gap: 20px;
+  position: absolute;
+  left: 70px;
+  bottom: 40px;
+}
+
+.media-link {
+  color: var(--accent);
+  font-size: 3vw;
+}
+
+.git {
+  display: grid;
+  gap: 20px;
+  position: absolute;
+  right: 7%;
+  bottom: 10%;
+}
+
+.git-header {
+  color: var(--accent);
+  font-weight: 500;
+  font-size: 2.2vmax;
+}
+
+.git-p {
+  color: gray;
+  font-weight: 400;
+  width: 30ch;
+  margin-bottom: 10%;
+  font-size: 1.5vmax;
+  line-height: normal;
+}
+
+.git-infos {
+  color: white;
+  margin-top: 0%;
+  font-size: 2vmax;
+  text-decoration: none;
+  line-height: 80%;
+}

@@ -1,0 +1,47 @@
+#root {
+  --accent: #21ff6a;
+}
+
+.App {
+  height: max-content;
+}
+
+@keyframes load {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.app-con {
+  animation: load;
+  animation-duration: 2.5s;
+}
+
+.message {
+  height: 30px;
+  width: 100vw;
+  background-color: #21ff6a;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.message > h4 {
+  justify-self: center;
+}
+
+#my-scrollbar {
+  width: 500px;
+  height: 500px;
+  overflow: auto;
+}
+/* 
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px green inset !important;
+} */

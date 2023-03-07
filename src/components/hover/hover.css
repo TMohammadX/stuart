@@ -1,0 +1,85 @@
+.h {
+  display: block;
+}
+
+.cursor {
+  position: fixed;
+  background-color: aliceblue;
+  z-index: -999;
+}
+
+.hover {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 0px;
+  height: 0px;
+  background: rgba(33, 255, 106, 1);
+  transform: translate(-50%, -50%);
+  -webkit-transition-duration: 100ms;
+  transition-duration: 100ms;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+
+  pointer-events: none;
+  backdrop-filter: blur(20px);
+  box-shadow: 0px 0px 12vw 12vw rgba(33, 255, 106, 0.4);
+  border-radius: 100%;
+  transition: all 0.8s linear;
+}
+
+.hover1 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 0px;
+  height: 0px;
+  background: rgba(33, 255, 106, 1);
+  transform: translate(-50%, -50%);
+  -webkit-transition-duration: 0ms;
+  transition-duration: 0ms;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+  will-change: width, height, transform, border;
+
+  pointer-events: none;
+  backdrop-filter: blur(20px);
+  box-shadow: 10vw 0px 15vw 10vw rgba(128, 128, 128, 0.8);
+  border-radius: 100%;
+  transition: all 0.6s linear;
+}
+
+.hover2 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 0px;
+  height: 0px;
+  background: rgb(0, 0, 0);
+  transform: translate(-50%, -50%);
+  -webkit-transition-duration: 30ms;
+  transition-duration: 30ms;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+  will-change: width, height, transform, border;
+
+  pointer-events: none;
+  backdrop-filter: blur(20px);
+  box-shadow: -15vw 0px 15vw 10vw rgb(255, 255, 255, 0.5);
+  border-radius: 100%;
+  transition: all 0.7s linear;
+}
+
+@media (min-width: 1500px) {
+  .hover {
+    box-shadow: 0px 0px 20vw 20vw rgba(33, 255, 106, 0.2);
+  }
+}
+
+@media (max-width: 1000px) {
+  .hover,
+  .hover1,
+  .hover2 {
+    display: none;
+  }
+}
