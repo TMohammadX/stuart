@@ -166,6 +166,10 @@
   font-size: 3vw;
 }
 
+.media-link:nth-child(2) {
+  font-size: 2.6vw;
+}
+
 .git {
   display: grid;
   gap: 20px;

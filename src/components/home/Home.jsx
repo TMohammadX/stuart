@@ -1,14 +1,16 @@
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import "./home.css";
-import { motion } from "framer-motion";
+import { motion, useAnimation } from "framer-motion";
 import Tilt from "react-parallax-tilt";
 import { Link } from "react-scroll";
 import vid from "../../assets/bg1.mp4";
 import { FaArrowDown } from "react-icons/fa";
 import Hover from "../hover/Hover";
+import { useInView } from "react-intersection-observer";
 
 export default function Home() {
+  const [ref, inView] = useInView();
   return (
     <div className="home">
       <Hover />
@@ -39,10 +41,10 @@ export default function Home() {
               to="featured"
               spy={true}
               smooth={true}
-              duration={500}
+              duration={1000}
               className="btn"
             >
-              FEATURED
+              Featured
             </Link>
           </h1>
           <motion.span
@@ -64,34 +66,70 @@ export default function Home() {
           <FaArrowDown />
         </Link>
       </section>
-      <section className="about prox">
-        <div className="about-inner">
+      <section className="about">
+        <div className="about-inner" ref={ref}>
           <div className="ab-box">
             <div className="m-img"></div>
-            <h1 className="ab-title">High Quality</h1>
-            <p className="ab-p">
+            <motion.h1
+              initial={{ opacity: 0, y: -30 }}
+              animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: -30 }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+              className="ab-title"
+            >
+              High Quality
+            </motion.h1>
+            <motion.p
+              className="ab-p"
+              initial={{ opacity: 0, y: 20 }}
+              animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+            >
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem
               ipsum dolor sit amet.
-            </p>
+            </motion.p>
           </div>
           <div className="ab-box">
             <div className="m-img2"></div>
-            <h1 className="ab-title">Simple Design</h1>
-            <p className="ab-p">
+            <motion.h1
+              initial={{ opacity: 0, y: -20 }}
+              animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: -30 }}
+              transition={{ duration: 0.5, delay: 0.4 }}
+              className="ab-title"
+            >
+              Simple Design
+            </motion.h1>
+            <motion.p
+              className="ab-p"
+              initial={{ opacity: 0, y: 20 }}
+              animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
+              transition={{ duration: 0.5, delay: 0.4 }}
+            >
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem
               ipsum dolor sit amet.
-            </p>
+            </motion.p>
           </div>
           <div className="ab-box">
             <div className="m-img"></div>
-            <h1 className="ab-title">Vegan Lether</h1>
-            <p className="ab-p">
+            <motion.h1
+              initial={{ opacity: 0, y: -20 }}
+              animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: -20 }}
+              transition={{ duration: 0.5, delay: 0.5 }}
+              className="ab-title"
+            >
+              Vegan Lether
+            </motion.h1>
+            <motion.p
+              className="ab-p"
+              initial={{ opacity: 0, y: 20 }}
+              animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
+              transition={{ duration: 0.5, delay: 0.5 }}
+            >
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem
               ipsum dolor sit amet.
-            </p>
+            </motion.p>
           </div>
         </div>
       </section>
@@ -124,7 +162,7 @@ export default function Home() {
             name="message"
           />
         </form>
-        <input className="btn" value="Send" type="submit" />
+        <input className="btn" defaultValue="Send" type="submit" />
       </section>
     </div>
   );

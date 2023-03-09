@@ -1,9 +1,11 @@
 .footer {
-  height: 70vh;
+  height: 80vh;
   width: 100vw;
-  background-color: var(--accent);
+  /* background-color: var(--accent); */
+  background-color: ;
   display: grid;
   place-items: center;
+  font-family: "open sans", sans-serif !important;
 }
 
 .footer-top {
@@ -34,4 +36,72 @@
 
 .footer-social-link {
   cursor: pointer;
+}
+
+/*newsletter*/
+
+.newsletter-con {
+  position: absolute;
+  right: 5%;
+  display: grid;
+  gap: 20px;
+  width: 40%;
+}
+
+.newsletter-text {
+  font-size: 1.6vw;
+  line-height: normal;
+  font-weight: 500;
+  color: var(--accent);
+}
+
+.email-input::placeholder {
+  color: white;
+}
+
+.email-input-con {
+  align-items: center;
+  display: flex;
+}
+
+.email-input {
+  background: transparent;
+  border: none;
+  height: 60px;
+  width: 90%;
+  outline: none;
+  font-size: 3vw;
+  border-bottom: 2px solid white;
+  margin-top: 5%;
+  color: white;
+}
+
+.pp-news {
+  width: 350px;
+  font-size: 1vw;
+  line-height: normal;
+  color: #707070;
+  font-weight: 600;
+}
+
+.sub {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 3vw;
+  position: absolute;
+  right: 10%;
+  bottom: 40%;
+}
+
+.error-message {
+  color: red;
+  font-weight: 600;
+  position: absolute;
+}
+
+.success-message {
+  color: green;
+  font-weight: 600;
+  position: absolute;
 }
