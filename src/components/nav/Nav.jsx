@@ -7,6 +7,7 @@ import { FaTiktok } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { Link } from "react-scroll";
+import { Link as Link2 } from "react-router-dom";
 import logo from "../../assets/logo.svg";
 
 export default function Nav() {
@@ -33,8 +34,8 @@ export default function Nav() {
 
   return (
     <motion.div className={nav ? "nav nav-af" : "nav"}>
-      <motion.a
-        href="/"
+      <Link2
+        to="/"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         whileHover={{ scale: 1.05 }}
@@ -42,21 +43,15 @@ export default function Nav() {
         className={nav ? "logo logo-af" : "logo"}
       >
         STUART
-      </motion.a>
+      </Link2>
       <motion.a href="/" className={nav ? "logo-i logoi" : "logo-i"}>
         <img src={logo} alt="" className="logo-icon" />
       </motion.a>
 
       <div className="right">
-        <Link
-          to="contact"
-          spy={true}
-          smooth={true}
-          duration={1500}
-          className="getin"
-        >
+        <Link2 to="/contact" className="getin">
           Get In Touch
-        </Link>
+        </Link2>
         <HiMenu className="open" role="button" onClick={handleToggle} />
       </div>
 
@@ -113,7 +108,7 @@ export default function Nav() {
               >
                 FEATURED
               </Link>
-              <Link
+              <Link2
                 to="contact"
                 spy={true}
                 smooth={true}
@@ -122,7 +117,7 @@ export default function Nav() {
                 className="link"
               >
                 CONTACT
-              </Link>
+              </Link2>
             </motion.div>
             <div className="media">
               <a href="#" className="media-link">

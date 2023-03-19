@@ -1,73 +1,91 @@
-.loader-con {
-  height: 100vh;
+.l-c {
   width: 100vw;
-  background-color: black;
+  height: 100vh;
   display: grid;
   place-items: center;
-  color: white;
 }
-
-/* .loader {
-  font-size: 48px;
-  font-weight: bold;
-  letter-spacing: 2px;
-  font-family: Arial, Helvetica, sans-serif;
-  color: var(--accent);
-  animation: smokeOut 1s ease-in-out infinite alternate;
-  text-shadow: 0 0 1px var(--accent);
-}
-.loader:before {
-  content: "STUART";
-}
-
-@keyframes smokeOut {
-  100% {
-    opacity: 0.08;
-    filter: blur(5px);
-    letter-spacing: 4px;
-  }
-} */
 
 .loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 80px;
   position: relative;
-  width: 85px;
-  height: 50px;
-  background-repeat: no-repeat;
-  background-image: linear-gradient(var(--accent) 50px, transparent 0),
-    linear-gradient(#fff 50px, transparent 0),
-    linear-gradient(var(--accent) 50px, transparent 0),
-    linear-gradient(#fff 50px, transparent 0),
-    linear-gradient(var(--accent) 50px, transparent 0),
-    linear-gradient(#fff 50px, transparent 0);
-  background-position: 0px center, 15px center, 30px center, 45px center,
-    60px center, 75px center, 90px center;
-  animation: rikSpikeRoll 1s linear infinite alternate;
 }
-@keyframes rikSpikeRoll {
+
+.loader:before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  right: -10px;
+  bottom: -10px;
+  border-radius: 50%;
+}
+
+.loader-inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.loader-block {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 2px;
+  background-color: var(--accent);
+  box-shadow: 0 0 10px var(--accent);
+  animation: loader_562 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+}
+
+.loader-block:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+.loader-block:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.loader-block:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+.loader-block:nth-child(4) {
+  animation-delay: 0.4s;
+}
+
+.loader-block:nth-child(5) {
+  animation-delay: 0.5s;
+}
+
+.loader-block:nth-child(6) {
+  animation-delay: 0.6s;
+}
+
+.loader-block:nth-child(7) {
+  animation-delay: 0.7s;
+}
+
+.loader-block:nth-child(8) {
+  animation-delay: 0.8s;
+}
+
+@keyframes loader_562 {
   0% {
-    background-size: 10px 3px;
+    transform: scale(1);
+    box-shadow: 0 0 20px rgba(31, 255, 105, 0.5);
   }
-  16% {
-    background-size: 10px 50px, 10px 3px, 10px 3px, 10px 3px, 10px 3px, 10px 3px;
+
+  20% {
+    transform: scale(1, 2.5);
+    box-shadow: 0 0 50px rgba(31, 255, 105, 0.7);
   }
-  33% {
-    background-size: 10px 30px, 10px 50px, 10px 3px, 10px 3px, 10px 3px,
-      10px 3px;
-  }
-  50% {
-    background-size: 10px 10px, 10px 30px, 10px 50px, 10px 3px, 10px 3px,
-      10px 3px;
-  }
-  66% {
-    background-size: 10px 3px, 10px 10px, 10px 30px, 10px 50px, 10px 3px,
-      10px 3px;
-  }
-  83% {
-    background-size: 10px 3px, 10px 3px, 10px 10px, 10px 30px, 10px 50px,
-      10px 3px;
-  }
-  100% {
-    background-size: 10px 3px, 10px 3px, 10px 3px, 10px 10px, 10px 30px,
-      10px 50px;
+
+  40% {
+    transform: scale(1);
+    box-shadow: 0 0 20px rgba(31, 255, 105, 0.5);
   }
 }

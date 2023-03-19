@@ -5,11 +5,19 @@ import Home from "./components/home/Home";
 import Footer from "./components/footer/Footer";
 import Priv from "./components/privacy-policy/Priv";
 import Loading from "./components/loading/Loading";
-import { Routes, Route } from "react-router-dom";
+import Contact from "./components/contact/Contact";
+import { Routes, Route, useLocation } from "react-router-dom";
 import SmoothScrollbar from "smooth-scrollbar";
 import { MdClose } from "react-icons/md";
+import { CSSTransition } from "react-transition-group";
 
 function App() {
+  const location = useLocation();
+  const [prevPath, setPrevPath] = useState(location.pathname);
+
+  useEffect(() => {
+    setPrevPath(location.pathname);
+  }, [location.pathname]);
   const [isShown, setIsShown] = useState(true);
   const [loading, setLoading] = useState(false);
   useEffect(() => {
@@ -39,9 +47,11 @@ function App() {
             <MdClose onClick={handleClick} style={{ cursor: "pointer" }} />
       </div>*/}
           <Nav />
-          <Routes>
+          <Routes location={location}>
             <Route path="/" element={<Home />} />
             <Route path="privacypolicy" element={<Priv />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="*" element={<h1>404</h1>} />
           </Routes>
           <Footer />
         </div>

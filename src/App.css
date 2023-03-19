@@ -45,3 +45,38 @@ input:-webkit-autofill:focus,
 input:-webkit-autofill:active {
   -webkit-box-shadow: 0 0 0 30px green inset !important;
 } */
+
+@keyframes slide-in {
+  from {
+    left: 100%;
+  }
+  to {
+    left: 0;
+  }
+}
+
+@keyframes slide-in-enter {
+  from {
+    left: -100%;
+  }
+  to {
+    left: 0;
+  }
+}
+.app.page-transition .page {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  width: 100%;
+  animation: slide-in 0.5s forwards;
+  background-color: aqua;
+}
+
+.app.page-transition .page-enter {
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  animation: slide-in-enter 0.5s forwards;
+  background-color: aqua;
+}

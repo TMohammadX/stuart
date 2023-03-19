@@ -98,7 +98,7 @@
   height: 45px;
   padding-left: 30px;
   padding-right: 30px;
-
+  text-decoration: none;
   font-size: 0.9rem;
   border: 1px solid var(--accent);
   border-radius: 100px;

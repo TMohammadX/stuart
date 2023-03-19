@@ -11,7 +11,7 @@ const NewsletterForm = ({ status, message, onValidated }) => {
     if (error) {
       const timer = setTimeout(() => {
         setError(null);
-      }, 1000);
+      }, 3000);
       return () => clearTimeout(timer);
     }
   }, [error]);

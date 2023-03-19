@@ -1,0 +1,9 @@
+.transition-effect1 {
+  position: absolute;
+  z-index: 10000000000000;
+  background-color: var(--accent);
+  top: 0;
+  right: 0;
+  width: 100%;
+  min-height: 100vh;
+}
