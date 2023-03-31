@@ -36,7 +36,7 @@
   width: 10px;
   height: 10px;
   margin: 2px;
-  background-color: var(--accent);
+  background-color: white;
   box-shadow: 0 0 10px var(--accent);
   animation: loader_562 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
 }
