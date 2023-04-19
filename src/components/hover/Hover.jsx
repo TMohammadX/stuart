@@ -36,9 +36,9 @@ const Hover = () => {
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
     >
-      <div className="hover"></div>
-      <div className="hover1"></div>
-      <div className="hover2"></div>
+      <div className="hover-con">
+        <div className="hover"></div>
+      </div>
     </motion.div>
   );
 };
