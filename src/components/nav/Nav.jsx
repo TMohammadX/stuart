@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./nav.css";
-import { HiMenu } from "react-icons/hi";
+import { TbMenu } from "react-icons/tb";
 import { MdClose } from "react-icons/md";
 import { AiFillInstagram } from "react-icons/ai";
 import { FaTiktok } from "react-icons/fa";
@@ -52,7 +52,7 @@ export default function Nav() {
         <Link2 to="/contact" className="getin">
           Get In Touch
         </Link2>
-        <HiMenu className="open" role="button" onClick={handleToggle} />
+        <TbMenu className="open" role="button" onClick={handleToggle} />
       </div>
 
       <AnimatePresence>
@@ -82,12 +82,6 @@ export default function Nav() {
               transition={{ duration: 1.5 }}
               className="links"
             >
-              <NavLink to="/" onClick={() => handleClose()} className="link">
-                <motion.span id="span">H</motion.span>
-                <motion.span id="span">O</motion.span>
-                <motion.span id="span">M</motion.span>
-                <motion.span id="span">E</motion.span>
-              </NavLink>
               <Link
                 to="about"
                 spy={true}

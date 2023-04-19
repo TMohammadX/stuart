@@ -11,13 +11,7 @@ function Transition({ timeline }) {
     const timeline = gsap.timeline();
 
     timeline.to(trans1.current, {
-      duration: 2.5,
-      y: 0,
-      ease: Power4.easeInOut,
-    });
-
-    timeline.to(trans1.current, {
-      duration: 2.0,
+      duration: 1.5,
       y: -2000,
       ease: Power4.easeInOut,
     });
