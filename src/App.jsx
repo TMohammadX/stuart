@@ -37,6 +37,7 @@ function App() {
         <Loading />
       ) : (
         <div className="app-con">
+          <div className="blur"></div>
           {/*<div
             className="message"
             style={{ display: isShown ? "flex" : "none" }}

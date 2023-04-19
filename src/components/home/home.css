@@ -46,7 +46,7 @@ b {
 }
 
 .btn {
-  background: var(--accent);
+  background: #21ff6a;
   color: black;
   font-weight: bold;
   border-radius: 100px;

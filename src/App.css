@@ -80,3 +80,13 @@ input:-webkit-autofill:active {
   animation: slide-in-enter 0.5s forwards;
   background-color: aqua;
 }
+
+.blur {
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  left: 0;
+  top: 0;
+  backdrop-filter: blur(200px);
+  z-index: -1200;
+}

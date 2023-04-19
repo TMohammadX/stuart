@@ -37,7 +37,7 @@
   height: 10px;
   margin: 2px;
   background-color: white;
-  box-shadow: 0 0 10px var(--accent);
+  box-shadow: 0 0 10px white;
   animation: loader_562 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
 }
 
@@ -76,16 +76,16 @@
 @keyframes loader_562 {
   0% {
     transform: scale(1);
-    box-shadow: 0 0 20px rgba(31, 255, 105, 0.5);
+    box-shadow: 0 0 20px white;
   }
 
   20% {
     transform: scale(1, 2.5);
-    box-shadow: 0 0 50px rgba(31, 255, 105, 0.7);
+    box-shadow: 0 0 50px white;
   }
 
   40% {
     transform: scale(1);
-    box-shadow: 0 0 20px rgba(31, 255, 105, 0.5);
+    box-shadow: 0 0 20px white;
   }
 }

@@ -6,8 +6,8 @@ const Hover = () => {
   const x = useMotionValue(0);
   const y = useMotionValue(0);
 
-  const cursorX = useTransform(x, (value) => value - 25);
-  const cursorY = useTransform(y, (value) => value - 25);
+  const cursorX = useTransform(x, (value) => value - 200);
+  const cursorY = useTransform(y, (value) => value - 200);
   const springConfig = { damping: 25, stiffness: 100 };
 
   const cursorXSpring = useSpring(cursorX, springConfig);
