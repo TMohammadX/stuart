@@ -11,14 +11,14 @@ export default function Footer() {
         <a href="/" className="footer-link">
           Home
         </a>
-        <a href="/" className="footer-link">
+        <a href="/contact" className="footer-link">
           Contact
         </a>
         <a href="/" className="footer-link">
-          Privacy Policy
+          Instagram
         </a>
-        <a href="/" className="footer-link">
-          Unsubscribe
+        <a href="/privacypolicy" className="footer-link">
+          Privacy Policy
         </a>
       </div>
       <h3 className="copyright">© STUART 2022. All rights reserved.</h3>

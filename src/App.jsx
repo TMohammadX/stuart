@@ -21,10 +21,12 @@ function App() {
   const [isShown, setIsShown] = useState(true);
   const [loading, setLoading] = useState(false);
   useEffect(() => {
-    setLoading(true);
-    setTimeout(() => {
-      setLoading(false);
-    }, 2000);
+    if (location.pathname === "/") {
+      setLoading(true);
+      setTimeout(() => {
+        setLoading(false);
+      }, 2000);
+    }
   }, []);
 
   const handleClick = (event) => {

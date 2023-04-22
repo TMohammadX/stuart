@@ -9,11 +9,76 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Link } from "react-scroll";
 import { Link as Link2 } from "react-router-dom";
 import logo from "../../assets/logo.svg";
+import { useNavigate } from "react-router-dom";
+import { scroller } from "react-scroll";
 
 export default function Nav() {
   const [isActive, setIsActive] = useState(false);
   const [open, setOpen] = useState(false);
   const [nav, setNav] = useState(false);
+  const navigate = useNavigate();
+
+  const handleToggle = () => {
+    setOpen(!open);
+  };
+
+  const handleClose = () => {
+    setOpen(false);
+  };
+
+  const handleAboutClick = () => {
+    if (location.pathname != "/") {
+      navigate("/"); // Navigate to the home page
+      setTimeout(() => {
+        scroller.scrollTo("about", {
+          duration: 1000,
+          delay: 0,
+          smooth: "easeInOutQuart",
+        });
+      }, 1000);
+    } else {
+      // Scroll to the About section after the navigation is complete
+      setTimeout(() => {
+        scroller.scrollTo("about", {
+          duration: 800,
+          delay: 0,
+          smooth: "easeInOutQuart",
+        });
+      }, 100);
+    }
+  };
+
+  const handleFeaturedClick = () => {
+    if (location.pathname != "/") {
+      navigate("/"); // Navigate to the home page
+      setTimeout(() => {
+        scroller.scrollTo("featured", {
+          duration: 1000,
+          delay: 0,
+          smooth: "easeInOutQuart",
+        });
+      }, 1000);
+    } else {
+      // Scroll to the About section after the navigation is complete
+      setTimeout(() => {
+        scroller.scrollTo("featured", {
+          duration: 800,
+          delay: 0,
+          smooth: "easeInOutQuart",
+        });
+      }, 100);
+    }
+  };
+
+  const handleFeatured = () => {
+    handleFeaturedClick();
+    handleClose();
+  };
+
+  const handleAbout = () => {
+    handleAboutClick();
+    handleClose();
+  };
 
   const changeNav = () => {
     if (window.scrollY >= 20) {
@@ -23,14 +88,6 @@ export default function Nav() {
     }
   };
   window.addEventListener("scroll", changeNav);
-
-  const handleToggle = () => {
-    setOpen(!open);
-  };
-
-  const handleClose = () => {
-    setOpen(false);
-  };
 
   return (
     <motion.div className={nav ? "nav nav-af" : "nav"}>
@@ -87,7 +144,7 @@ export default function Nav() {
                 spy={true}
                 smooth={true}
                 duration={1000}
-                onClick={() => handleClose()}
+                onClick={handleAbout}
                 className="link"
               >
                 ABOUT
@@ -97,7 +154,7 @@ export default function Nav() {
                 spy={true}
                 smooth={true}
                 duration={1000}
-                onClick={() => handleClose()}
+                onClick={handleFeatured}
                 className="link"
               >
                 FEATURED
