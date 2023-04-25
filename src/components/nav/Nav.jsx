@@ -171,7 +171,11 @@ export default function Nav() {
               </Link2>
             </motion.div>
             <div className="media">
-              <a href="#" className="media-link">
+              <a
+                href="https://www.instagram.com/shopstuartt/,"
+                target="_blank"
+                className="media-link"
+              >
                 <AiFillInstagram />
               </a>
 
