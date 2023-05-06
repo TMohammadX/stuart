@@ -55,7 +55,6 @@ function App() {
             <Route path="/contact" element={<Contact />} />
             <Route path="*" element={<h1>404</h1>} />
           </Routes>
-          <Footer />
         </div>
       )}
     </div>

@@ -1,7 +1,7 @@
 .transition-effect1 {
   position: absolute;
   z-index: 10000000000000;
-  background-color: var(--accent);
+  background-color: black;
   top: 0;
   right: 0;
   width: 100%;

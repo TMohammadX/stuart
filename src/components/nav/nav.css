@@ -23,7 +23,7 @@
   padding-right: 70px;
   font-family: "Jost", sans-serif;
   position: absolute;
-  z-index: 2;
+  z-index: 100;
   padding-top: 25px;
 }
 
@@ -62,9 +62,9 @@
 }
 
 .close {
-  border: 2px solid white;
   border-radius: 50%;
   align-self: center;
+  color: white !important;
 }
 
 @keyframes slidein {

@@ -18,6 +18,7 @@
 .app-con {
   animation: load;
   animation-duration: 2.5s;
+  position: relative;
 }
 
 .message {

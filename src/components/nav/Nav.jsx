@@ -172,7 +172,7 @@ export default function Nav() {
             </motion.div>
             <div className="media">
               <a
-                href="https://www.instagram.com/shopstuartt/,"
+                href="https://www.instagram.com/shopstuartt/"
                 target="_blank"
                 className="media-link"
               >
