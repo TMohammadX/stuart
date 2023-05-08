@@ -153,6 +153,10 @@
   cursor: pointer;
 }
 
+.link:hover {
+  text-decoration: line-through;
+}
+
 .media {
   display: flex;
   gap: 20px;

@@ -1,9 +1,11 @@
 import React from "react";
 import "./priv.css";
+import Transition from "../transition/Transition";
 
 export default function priv() {
   return (
     <div className="priv">
+      <Transition />
       <h1 className="priv-title">Privacy Policy for STUART</h1>
 
       <p>

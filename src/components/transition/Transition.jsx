@@ -6,8 +6,8 @@ import { motion } from "framer-motion";
 function Transition({ timeline }) {
   return (
     <motion.div
-      initia={{ y: "90%" }}
-      animate={{ y: "-100%" }}
+      initial={{ y: "50%" }}
+      animate={{ y: "-150vh" }}
       transition={{ duration: 1 }}
       className="transition-effect1"
     ></motion.div>

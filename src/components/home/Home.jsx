@@ -1,7 +1,13 @@
-import React, { useRef, useLayoutEffect } from "react";
+import React, { useRef, useLayoutEffect, useState, useEffect } from "react";
+import {
+  animate,
+  motion,
+  AnimatePresence,
+  useMotionValue,
+  useScroll,
+} from "framer-motion";
 import emailjs from "@emailjs/browser";
 import "./home.css";
-import { motion, useAnimation, AnimatePresence } from "framer-motion";
 import Tilt from "react-parallax-tilt";
 import { Link } from "react-scroll";
 import vid from "../../assets/bg1.mp4";
@@ -145,7 +151,14 @@ export default function Home() {
           </div>
         </section>
         <section className="featured prox">
-          <h1 className="section-title">Featured</h1>
+          <div className="featured-text">
+            <h1 className="featured-title">PRODUCTS</h1>
+            <p className="featured-p">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem
+              ipsum dolor sit amet.
+            </p>
+          </div>
           <div className="featured-content"></div>
         </section>
         <Footer />
