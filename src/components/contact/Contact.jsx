@@ -2,6 +2,7 @@ import React, { useRef, useLayoutEffect } from "react";
 import "./contact.css";
 import Hover from "../hover/Hover";
 import Transition from "../transition/Transition.jsx";
+import { motion } from "framer-motion";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { ScrollSmoother } from "../../utils/ScrollSmoother";
@@ -26,14 +27,13 @@ export default function Contact() {
 
   return (
     <div ref={el}>
-      <Transition timeline={contact} />
       <Hover />
       <section className="contact" id="smooth-content">
         <div className="con-con">
-          <h1 className="contact-title">
+          <motion.h1 className="contact-title">
             Get In <b>Touch</b> <br />
             With Us
-          </h1>
+          </motion.h1>
           <form className="contact-inputs">
             <input
               type="text"

@@ -91,3 +91,55 @@ input:-webkit-autofill:active {
   backdrop-filter: blur(200px);
   z-index: -1200;
 }
+
+.t4 {
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  place-items: center;
+}
+
+.t4-con {
+  width: 100vw;
+  height: 60vh;
+  display: grid;
+  place-items: center;
+  color: white;
+}
+
+.t4-con > div {
+  display: grid;
+  place-items: center;
+  gap: 15vh;
+  margin-top: 45px;
+}
+
+.t4-con > div > h1 {
+  font-size: 10rem;
+}
+
+.t4-btn {
+  height: 50px;
+  width: 150px;
+  border-radius: 200px;
+  border: none;
+  background-color: #21ff6a;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+  display: grid;
+  place-items: center;
+  transition: all 0.3s;
+  font-size: 0.9rem;
+}
+
+.t4-btn:hover {
+  color: white;
+}
+
+@media (min-width: 1500px) {
+  .t4-con > div > h1 {
+    font-size: 15rem;
+  }
+}

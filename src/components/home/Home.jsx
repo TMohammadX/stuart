@@ -75,7 +75,7 @@ export default function Home() {
                   duration={1000}
                   className="btn"
                 >
-                  Featured
+                  Products
                 </Link>
               </motion.h1>
               <motion.span
