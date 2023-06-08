@@ -180,24 +180,39 @@ b {
   justify-self: center;
   background-color: gray;
   margin-bottom: 50px;
+  filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+
+  transition: all 0.3 ease;
 }
 
 .ab-box:nth-child(1) .m-img {
-  background-image: url(../../assets/2.png);
+  background-image: url(../../assets/pp1.jpg);
   background-position: center;
   background-size: cover;
 }
 
 .ab-box:nth-child(3) .m-img {
-  background-image: url(../../assets/4.png);
+  background-image: url(../../assets/pp2.jpg);
   background-position: center;
   background-size: cover;
 }
 
 .ab-box:nth-child(2) .m-img2 {
-  background-image: url(../../assets/3.png);
+  background-image: url(../../assets/pp3.jpg);
   background-position: center;
   background-size: cover;
+}
+
+.m-img:hover {
+  filter: grayscale(0%);
+  -webkit-filter: grayscale(0%);
+}
+
+.m-img2:hover {
+  filter: grayscale(0%);
+  -moz-filter: grayscale(0%);
 }
 
 .m-img2 {
@@ -207,6 +222,11 @@ b {
   justify-self: center;
   background-color: gray;
   margin-bottom: 50px;
+  filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+
+  transition: all 0.3 ease;
 }
 
 /* ================================================================= */
@@ -219,7 +239,7 @@ b {
   padding-left: 70px;
   padding-right: 70px;
   padding-top: 50px;
-  height: 100vh;
+  height: 120vh;
   width: 100vw;
   position: relative;
 }
@@ -240,6 +260,15 @@ b {
   color: #21ff6a;
 }
 
+@keyframes marquee {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: -200%;
+  }
+}
+
 .featured-p {
   width: 30%;
   color: darkgray;
@@ -248,8 +277,20 @@ b {
 
 .featured-content {
   position: absolute;
-  width: 100%;
-  bottom: 5%;
+  width: 800%;
+  bottom: 10%;
   left: 0;
-  transform: rotate(6deg);
+  display: flex;
+  gap: 20px;
+  animation: marquee 20s linear infinite;
+}
+
+.featured-item {
+  background-color: white;
+  width: 30vw;
+  height: 50vh;
+  background-image: url("../../assets/2.png");
+  background-position: center;
+  background-size: cover;
+  border-radius: 5px;
 }

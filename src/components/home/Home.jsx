@@ -1,11 +1,5 @@
 import React, { useRef, useLayoutEffect, useState, useEffect } from "react";
-import {
-  animate,
-  motion,
-  AnimatePresence,
-  useMotionValue,
-  useScroll,
-} from "framer-motion";
+import { AnimatePresence, usePresence, motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
 import "./home.css";
 import Tilt from "react-parallax-tilt";
@@ -20,6 +14,8 @@ import ScrollSmoother from "../../utils/ScrollSmoother";
 import Footer from "../footer/Footer";
 
 export default function Home() {
+  const [isPresent, safeToRemove] = usePresence();
+
   const el = useRef();
   const q = gsap.utils.selector(el);
   gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
@@ -151,15 +147,28 @@ export default function Home() {
           </div>
         </section>
         <section className="featured prox">
-          <div className="featured-text">
+          {/*}  <div className="featured-text">
             <h1 className="featured-title">PRODUCTS</h1>
             <p className="featured-p">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem
               ipsum dolor sit amet.
             </p>
+  </div>*/}
+          <div className="featured-content">
+            <div className="featured-item" />
+            <div className="featured-item" />
+            <div className="featured-item" />
+            <div className="featured-item" />
+            <div className="featured-item" />
+            <div className="featured-item" />
+            <div className="featured-item" />
+            <div className="featured-item" />
+            <div className="featured-item" />
+            <div className="featured-item" />
+            <div className="featured-item" />
+            <div className="featured-item" />
           </div>
-          <div className="featured-content"></div>
         </section>
         <Footer />
       </div>

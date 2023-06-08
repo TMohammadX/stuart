@@ -157,7 +157,7 @@ export default function Nav() {
                 onClick={handleFeatured}
                 className="link"
               >
-                FEATURED
+                PRODUCTS
               </Link>
               <Link2
                 to="contact"
