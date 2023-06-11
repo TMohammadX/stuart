@@ -44,10 +44,11 @@ body {
 
 ::-webkit-scrollbar {
   width: 10px;
+  background-color: transparent;
 }
 
 ::-webkit-scrollbar-track {
-  background: transparent;
+  background-color: transparent;
 }
 
 ::-webkit-scrollbar-thumb {

@@ -205,12 +205,12 @@ b {
   background-size: cover;
 }
 
-.m-img:hover {
+.ab-box:hover .m-img {
   filter: grayscale(0%);
   -webkit-filter: grayscale(0%);
 }
 
-.m-img2:hover {
+.ab-box:hover .m-img2 {
   filter: grayscale(0%);
   -moz-filter: grayscale(0%);
 }
@@ -247,17 +247,17 @@ b {
 .featured-text {
   display: flex;
   gap: 10%;
-  justify-content: center;
+  justify-content: space-around;
   align-content: center;
   position: absolute;
-  top: 25%;
+  top: 20%;
   width: 100%;
 }
 
 .featured-title {
   font-weight: 500;
-  font-size: 1vw;
-  color: #21ff6a;
+  font-size: 2rem;
+  color: white;
 }
 
 @keyframes marquee {
@@ -289,7 +289,6 @@ b {
   background-color: white;
   width: 30vw;
   height: 50vh;
-  background-image: url("../../assets/2.png");
   background-position: center;
   background-size: cover;
   border-radius: 5px;
