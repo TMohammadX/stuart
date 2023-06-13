@@ -35,7 +35,7 @@
 .logo {
   color: white;
   margin-top: 20px;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 2rem;
   cursor: pointer;
   text-decoration: none;
@@ -184,13 +184,13 @@
 
 .git-header {
   color: var(--accent);
-  font-weight: 500;
+  font-weight: 400;
   font-size: 2.2vmax;
 }
 
 .git-p {
   color: gray;
-  font-weight: 400;
+  font-weight: 300;
   width: 30ch;
   margin-bottom: 10%;
   font-size: 1.5vmax;
@@ -203,4 +203,5 @@
   font-size: 2vmax;
   text-decoration: none;
   line-height: 80%;
+  font-weight: 400;
 }

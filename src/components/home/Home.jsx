@@ -147,14 +147,16 @@ export default function Home() {
           </div>
         </section>
         <section className="featured prox">
-          {/*}  <div className="featured-text">
-            <h1 className="featured-title">PRODUCTS</h1>
-            <p className="featured-p">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem
-              ipsum dolor sit amet.
-            </p>
-  </div>*/}
+          <div className="featured-text">
+            <h1 className="featured-title">SELECTED PRODUCTS</h1>
+            <h1 className="featured-p">
+              Explore some of our<strong> best products</strong> <br />
+              All made in school,
+              <br />
+              <strong>Hardworking</strong> and <strong>passionate</strong>{" "}
+              <br /> students
+            </h1>
+          </div>
           <div className="featured-content">
             <div className="featured-item" />
             <div className="featured-item" />

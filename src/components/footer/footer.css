@@ -3,7 +3,7 @@
   width: 100vw;
   display: grid;
   place-items: center;
-  font-family: "open sans", sans-serif !important;
+  font-family: "Noto Sans JP", sans-serif;
   position: relative;
 }
 
@@ -17,19 +17,19 @@
 
 .footer-links-title {
   color: var(--accent);
-  font-weight: 500;
+  font-weight: 400;
   margin-bottom: 30px;
 }
 
 .footer-link {
   color: #707070;
   text-decoration: none;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 .copyright {
   color: white;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 0.9rem;
   position: absolute;
   left: 5%;
@@ -43,12 +43,13 @@
   display: grid;
   gap: 20px;
   width: 40%;
+  bottom: 20%;
 }
 
 .newsletter-text {
   font-size: 1.6vw;
   line-height: normal;
-  font-weight: 600;
+  font-weight: 400;
   color: var(--accent);
 }
 
@@ -78,7 +79,7 @@
   font-size: 1vw;
   line-height: normal;
   color: #707070;
-  font-weight: 600;
+  font-weight: 400;
 }
 
 .sub {
@@ -88,18 +89,18 @@
   font-size: 3vw;
   position: absolute;
   right: 10%;
-  bottom: 40%;
+  bottom: 33%;
   outline: none;
 }
 
 .error-message {
   color: red;
-  font-weight: 600;
+  font-weight: 400;
   position: absolute;
 }
 
 .success-message {
   color: green;
-  font-weight: 600;
+  font-weight: 400;
   position: absolute;
 }

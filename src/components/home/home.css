@@ -9,7 +9,7 @@
   width: 100vw;
   display: grid;
   place-items: center;
-  padding-top: 40px;
+  padding-top: 50px;
   position: relative;
 }
 
@@ -28,6 +28,7 @@
   line-height: -100px;
   align-items: center;
   display: flex;
+  z-index: 4;
 }
 
 .slo:nth-child(1) {
@@ -49,7 +50,7 @@ b {
 .btn {
   background: #21ff6a;
   color: black;
-  font-weight: bold;
+  font-weight: 600;
   border-radius: 100px;
   border: none;
   width: 150px;
@@ -62,9 +63,10 @@ b {
   justify-content: center;
   align-items: center;
   padding: 0;
-  margin: 0;
+  margin-top: 3.5%;
   transform: scale(0.95);
   font-weight: medium;
+  z-index: 5;
 }
 
 .btn:hover {
@@ -164,12 +166,13 @@ b {
   color: white;
   font-size: 2rem;
   margin-bottom: 20px;
+  font-weight: 400;
 }
 
 .ab-p {
   width: 100%;
-  color: gray;
-  font-weight: 500;
+  color: darkgray;
+  font-weight: 300;
   font-size: 1vw;
 }
 
@@ -239,25 +242,34 @@ b {
   padding-left: 70px;
   padding-right: 70px;
   padding-top: 50px;
-  height: 120vh;
+  height: 140vh;
   width: 100vw;
   position: relative;
 }
 
 .featured-text {
   display: flex;
-  gap: 10%;
-  justify-content: space-around;
+  justify-content: center;
   align-content: center;
   position: absolute;
   top: 20%;
+  gap: 10%;
   width: 100%;
+  left: 0;
+  height: 40vh;
 }
 
 .featured-title {
-  font-weight: 500;
-  font-size: 2rem;
+  font-weight: 300;
+  font-size: 0.8rem;
   color: white;
+}
+
+.featured-p {
+  color: white;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: normal;
 }
 
 @keyframes marquee {
@@ -269,10 +281,13 @@ b {
   }
 }
 
-.featured-p {
-  width: 30%;
-  color: darkgray;
-  font-size: 1.2vw;
+@keyframes marqueee {
+  0% {
+    right: 0;
+  }
+  100% {
+    right: -200%;
+  }
 }
 
 .featured-content {
@@ -285,11 +300,29 @@ b {
   animation: marquee 20s linear infinite;
 }
 
+.featured-content1 {
+  position: absolute;
+  width: 800%;
+  top: 0;
+  left: 0;
+  display: flex;
+  gap: 20px;
+  animation: marqueee 20s linear infinite;
+}
+
 .featured-item {
   background-color: white;
+  background-image: url(../../assets/pp1.jpg);
+  background-size: cover;
+  background-position: center;
+  filter: grayscale(100%);
   width: 30vw;
   height: 50vh;
   background-position: center;
   background-size: cover;
   border-radius: 5px;
+}
+
+.featured-item:hover {
+  filter: grayscale(0%);
 }
