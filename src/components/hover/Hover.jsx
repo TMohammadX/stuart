@@ -26,20 +26,27 @@ const Hover = () => {
   }, []);
 
   return (
-    <motion.div
-      className="cursor"
-      style={{
-        x: cursorXSpring,
-        y: cursorYSpring,
-      }}
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      exit={{ opacity: 0 }}
-    >
-      <div className="hover-con">
-        <div className="hover"></div>
-      </div>
-    </motion.div>
+    <>
+      <motion.div
+        className="cursor"
+        style={{
+          x: cursorXSpring,
+          y: cursorYSpring,
+        }}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+      >
+        <div className="hover-con">
+          <div className="hover"></div>
+        </div>
+      </motion.div>
+      <motion.div className="cursor2">
+        <div className="hover-con">
+          <div className="hover"></div>
+        </div>
+      </motion.div>
+    </>
   );
 };
 

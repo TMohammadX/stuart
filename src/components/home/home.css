@@ -103,6 +103,24 @@ b {
   filter: grayscale(1);
 }
 
+@media (max-width: 425px) {
+  .bg {
+    height: 50vh;
+    width: 80vw;
+    border-radius: 200px;
+  }
+  .slo {
+    font-size: 17vw !important;
+  }
+
+  .slo:nth-child(1) {
+    margin-left: 10vh;
+  }
+
+  .title {
+    line-height: 0vw;
+  }
+}
 .godown {
   position: absolute;
   width: 15vw;
@@ -166,7 +184,7 @@ b {
   color: white;
   font-size: 2rem;
   margin-bottom: 20px;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 .ab-p {
@@ -252,7 +270,7 @@ b {
   justify-content: center;
   align-content: center;
   position: absolute;
-  top: 20%;
+  top: 18%;
   gap: 10%;
   width: 100%;
   left: 0;
@@ -292,6 +310,7 @@ b {
 
 .featured-content {
   position: absolute;
+  overflow-x: hidden;
   width: 800%;
   bottom: 10%;
   left: 0;

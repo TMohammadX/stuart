@@ -104,7 +104,7 @@ export default function Home() {
                 transition={{ duration: 0.4, delay: 0.2 }}
                 className="ab-title"
               >
-                High Quality
+                Unique Design
               </motion.h1>
               <motion.p className="ab-p">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -120,7 +120,7 @@ export default function Home() {
                 transition={{ duration: 0.4, delay: 0.3 }}
                 className="ab-title"
               >
-                Simple Design
+                High Quality
               </motion.h1>
               <motion.p className="ab-p">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -136,7 +136,7 @@ export default function Home() {
                 transition={{ duration: 0.4, delay: 0.4 }}
                 className="ab-title"
               >
-                Vegan Lether
+                Handmade
               </motion.h1>
               <motion.p className="ab-p">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do

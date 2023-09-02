@@ -5,6 +5,7 @@
   place-items: center;
   padding-top: 20px;
   padding-bottom: 40px;
+  font-family: "Noto Sans JP", sans-serif;
 }
 
 .con-con {
@@ -61,7 +62,7 @@
   font-size: 0.9rem;
   cursor: pointer;
   transition: all 0.5s linear;
-  font-family: "open sans", sans-serif;
+  font-family: "Noto Sans JP", sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;

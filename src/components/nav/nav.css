@@ -27,6 +27,7 @@
   padding-top: 25px;
 }
 
+
 /* .nav-af {
   background-color: black;
   padding-top: 10px;
@@ -205,3 +206,29 @@
   line-height: 80%;
   font-weight: 400;
 }
+ 
+@media (max-width:425px ) {
+    .nav {
+      padding-left:5%;
+      padding-right: 5%;
+      padding-top: 5%;
+      align-items: center;
+      display: flex;
+      height: 4rem;
+    }
+    .getin {
+      display: none;
+    }
+    .logo, .logo1 {
+      font-size: 1.7rem;
+      margin: 0;
+      color: white;
+    }
+    .open {
+      font-size: 2rem;
+    }
+    .close {
+      font-size: 2rem;
+    }
+  }
+
