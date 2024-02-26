@@ -4,7 +4,7 @@ Information website for a school clothing company.
 
 ## URL
 
-[stuart.cf](https://stuart.cf)
+[stuart.cf](https://shop-stuart.web.app)
 
 ## Contributing
 
